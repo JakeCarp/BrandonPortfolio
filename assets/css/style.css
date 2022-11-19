@@ -288,6 +288,9 @@ h6 {
   background-size: cover;
   position: relative;
 }
+.hero-tag {
+  color: rgba(21, 87, 219, 0.918)
+}
 
 @media (min-width: 992px) {
   #hero {
@@ -633,67 +636,39 @@ section {
   content: "";
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   z-index: 2;
-  opacity: 0;
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
   text-align: center;
   z-index: 3;
-  transition: all ease-in-out 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::before {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
 
-.portfolio .portfolio-wrap .portfolio-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid #d7dce1;
-  border-right: 3px solid #d7dce1;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
+
+
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #191d21;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
+  color: #191d21;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -717,27 +692,7 @@ section {
   color: #148af9;
 }
 
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 15px;
-  left: 15px;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
-  bottom: 15px;
-  right: 15px;
-}
 
 /*--------------------------------------------------------------
 # Portfolio Details
